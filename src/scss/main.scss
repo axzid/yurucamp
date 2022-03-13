@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    .container-fluid{
+        .container{
+            nav{
+                .navigation{
+                    img.logo{
+                        width: 10rem;
+                        object-fit: cover;
+                        cursor: pointer;
+                        
+                    }
+                    .navbar-toggler{
+                        border: none;
+                    }
+                    ul{
+                        li{
+                            padding: 10px;
+                            border-bottom: 1px solid transparent;
+                            transition: 0.2s;
+
+                            a{
+                                font-weight: 500;
+                            }
+                        }
+                        li:after{
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background: rgb(56, 56, 56);
+                            transition: width 0.3s;
+                        }
+                        li:hover::after{
+                            width: 100%;
+                            
+                        }
+                    }
+                    
+
+
+                }
+            }
+        }
+    }
+    
+    .container.hero{
+        min-height: 80vh;
+        
+    }
+}
+#about{
+    background: rgb(74, 135, 192);
+}
+#home{
+    background-image: url("./src/asets/Vector 57.png");
+    background-color: white;
+}
